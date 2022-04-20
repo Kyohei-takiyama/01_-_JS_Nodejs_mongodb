@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // DB接続、mongoDBパスワードを使用、あとはDB名を決める
-mongoose.connect("url")
+mongoose.connect("mongodb+srv://takiyama:Kyohei0202@cluster0.rhh5z.mongodb.net/thread?retryWrites=true&w=majority")
 .then(() => {
     console.log("db connected");
 })
